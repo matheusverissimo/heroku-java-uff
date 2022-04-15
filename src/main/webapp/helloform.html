@@ -13,10 +13,19 @@ and open the template in the editor.
     <body>
         <div>Formulário de HelloWorld (usando o HelloServlet.java)</div>
            <form action="alomundo" method="post">
-           <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
-           <input type="radio" name="lang" value="en"> Inglês
-           <input type="radio" name="lang" value="fr"> Francês
-           <input type="radio" name="lang" value="de"> Alemão<br><br>
+               <select name="lang">
+                   <option selected value="pt">Português</option>
+                   <option value="en">Inglês</option>
+                   <option value="fr">Francês</option>
+                   <option value="de">Alemão</option>
+                   <option value="jp">Japonês</option>
+                   <option value="su">Suaíli</option>
+               </select>
+               <select name="pronome">
+                   <option value="sr">Sr.</option>
+                   <option value="sra">Sra.</option>
+                   <option value="none">(Nenhum)</option>
+               </select>
            Nome: <input type="text" name="nome"/><br><br>
            <input type="submit" value="Cumprimentar"/>
         </form>
